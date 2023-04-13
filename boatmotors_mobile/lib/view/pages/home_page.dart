@@ -656,10 +656,580 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: MediaQuery.of(context).size.height * 0.05,
                         ),
+                        Padding(
+                          padding: EdgeInsets.only(
+                              left: MediaQuery.of(context).size.width * 0.09),
+                          child: Row(
+                            children: [
+                              // Image.asset("assets/arrow_left.png"),
+                              const Icon(Icons.subdirectory_arrow_left_rounded),
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width * 0.03,
+                              ),
+                              Text(
+                                """Назад""",
+                                style: GoogleFonts.montserrat(
+                                  color: const Color(0xffABB2B4),
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 15.0,
+                                ),
+                              ),
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width * 0.05,
+                              ),
+                              const Text("""1"""),
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width * 0.03,
+                              ),
+                              const Text("""2"""),
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width * 0.03,
+                              ),
+                              const Text("""3"""),
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width * 0.03,
+                              ),
+                              const Text("""4"""),
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width * 0.03,
+                              ),
+                              const Text("""110"""),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ],
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.15,
+              ),
+              // Категории //
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: MediaQuery.of(context).size.width * 0.05),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      width: double.infinity,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            """Категории""",
+                            style: TextStyle(
+                              color: Color(0xff363636),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 23.0,
+                            ),
+                          ),
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.06,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          // Категории Row 1 //
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              // Категории 1 //
+                              Container(
+                                width:
+                                    MediaQuery.of(context).size.width * 0.430,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(10.0),
+                                    topRight: Radius.circular(10.0),
+                                    bottomLeft: Radius.circular(10.0),
+                                    bottomRight: Radius.circular(10.0),
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      """Моторы для лодок""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 15.0,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    const Text(
+                                      """Gladiator
+Sea-Pro
+Seanovo
+HIDEA (ХАЙДИ)
+Yamaha""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        const Text(
+                                          """Смотреть всё""",
+                                          style: TextStyle(
+                                            color: Color(0xff50626C),
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 14.0,
+                                          ),
+                                        ),
+                                        Image.asset("assets/arrow_right.png"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              // Категории 2 //
+                              Container(
+                                width:
+                                    MediaQuery.of(context).size.width * 0.430,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(10.0),
+                                    topRight: Radius.circular(10.0),
+                                    bottomLeft: Radius.circular(10.0),
+                                    bottomRight: Radius.circular(10.0),
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      """Моторы для лодок""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 15.0,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    const Text(
+                                      """Gladiator
+Sea-Pro
+Seanovo
+HIDEA (ХАЙДИ)
+Yamaha""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        const Text(
+                                          """Смотреть всё""",
+                                          style: TextStyle(
+                                            color: Color(0xff50626C),
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 14.0,
+                                          ),
+                                        ),
+                                        Image.asset("assets/arrow_right.png"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.025,
+                          ),
+                          // Категории Row 2 //
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              // Категории 3 //
+                              Container(
+                                width:
+                                    MediaQuery.of(context).size.width * 0.430,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(10.0),
+                                    topRight: Radius.circular(10.0),
+                                    bottomLeft: Radius.circular(10.0),
+                                    bottomRight: Radius.circular(10.0),
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      """Моторы для лодок""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 15.0,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    const Text(
+                                      """Gladiator
+Sea-Pro
+Seanovo
+HIDEA (ХАЙДИ)
+Yamaha""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        const Text(
+                                          """Смотреть всё""",
+                                          style: TextStyle(
+                                            color: Color(0xff50626C),
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 14.0,
+                                          ),
+                                        ),
+                                        Image.asset("assets/arrow_right.png"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              // Категории 4 //
+                              Container(
+                                width:
+                                    MediaQuery.of(context).size.width * 0.430,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(10.0),
+                                    topRight: Radius.circular(10.0),
+                                    bottomLeft: Radius.circular(10.0),
+                                    bottomRight: Radius.circular(10.0),
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      """Моторы для лодок""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 15.0,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    const Text(
+                                      """Gladiator
+Sea-Pro
+Seanovo
+HIDEA (ХАЙДИ)
+Yamaha""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        const Text(
+                                          """Смотреть всё""",
+                                          style: TextStyle(
+                                            color: Color(0xff50626C),
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 14.0,
+                                          ),
+                                        ),
+                                        Image.asset("assets/arrow_right.png"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.025,
+                          ),
+                          // Категории Row 2 //
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              // Категории 3 //
+                              Container(
+                                width:
+                                    MediaQuery.of(context).size.width * 0.430,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(10.0),
+                                    topRight: Radius.circular(10.0),
+                                    bottomLeft: Radius.circular(10.0),
+                                    bottomRight: Radius.circular(10.0),
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      """Моторы для лодок""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 15.0,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    const Text(
+                                      """Gladiator
+Sea-Pro
+Seanovo
+HIDEA (ХАЙДИ)
+Yamaha""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        const Text(
+                                          """Смотреть всё""",
+                                          style: TextStyle(
+                                            color: Color(0xff50626C),
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 14.0,
+                                          ),
+                                        ),
+                                        Image.asset("assets/arrow_right.png"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              // Категории 4 //
+                              Container(
+                                width:
+                                    MediaQuery.of(context).size.width * 0.430,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(10.0),
+                                    topRight: Radius.circular(10.0),
+                                    bottomLeft: Radius.circular(10.0),
+                                    bottomRight: Radius.circular(10.0),
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      """Моторы для лодок""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 15.0,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    const Text(
+                                      """Gladiator
+Sea-Pro
+Seanovo
+HIDEA (ХАЙДИ)
+Yamaha""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.007,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        const Text(
+                                          """Смотреть всё""",
+                                          style: TextStyle(
+                                            color: Color(0xff50626C),
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 14.0,
+                                          ),
+                                        ),
+                                        Image.asset("assets/arrow_right.png"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.025,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.5,
               ),
             ],
           ),
