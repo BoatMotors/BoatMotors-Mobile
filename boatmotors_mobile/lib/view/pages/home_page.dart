@@ -1225,6 +1225,166 @@ Yamaha""",
                         ],
                       ),
                     ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.06,
+                    ),
+                    // Статьи //
+                    Column(
+                      children: [
+                        SizedBox(
+                          width: double.infinity,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                """Статьи""",
+                                style: TextStyle(
+                                  color: Color(0xff363636),
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 23.0,
+                                ),
+                              ),
+                              SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height * 0.05,
+                              ),
+                            ],
+                          ),
+                        ),
+                        // Статьи Row 1 //
+                        Row(
+                          children: [
+                            Container(
+                              width: MediaQuery.of(context).size.width * 0.430,
+                              // height: MediaQuery.of(context).size.height * 0.2,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: const BorderRadius.only(
+                                  topLeft: Radius.circular(10.0),
+                                  topRight: Radius.circular(10.0),
+                                  bottomLeft: Radius.circular(10.0),
+                                  bottomRight: Radius.circular(10.0),
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: const Offset(0, 3),
+                                  ),
+                                ],
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Positioned(
+                                      bottom: 20.0,
+                                      right: 20.0,
+                                      child: Image.asset("assets/boat.png"),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.03,
+                                    ),
+                                    const Text(
+                                      """ГЛИССИРОВАНИЕ НАДУВНЫХ ЛОДОК И ВСЁ ЧТО НУЖНО ЗНАТЬ ОБ ЭТОМ""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 15.0,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.01,
+                                    ),
+                                    const Text(
+                                      """Глиссирование является одним из самых экономичных вариантов передвижения.....""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14.0,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        // Статьи Row 2 //
+                        Row(
+                          children: [
+                            Container(
+                              width: MediaQuery.of(context).size.width * 0.430,
+                              // height: MediaQuery.of(context).size.height * 0.2,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: const BorderRadius.only(
+                                  topLeft: Radius.circular(10.0),
+                                  topRight: Radius.circular(10.0),
+                                  bottomLeft: Radius.circular(10.0),
+                                  bottomRight: Radius.circular(10.0),
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: const Offset(0, 3),
+                                  ),
+                                ],
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Positioned(
+                                      bottom: 20.0,
+                                      right: 20.0,
+                                      child: Image.asset("assets/boat.png"),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.03,
+                                    ),
+                                    const Text(
+                                      """ГЛИССИРОВАНИЕ НАДУВНЫХ ЛОДОК И ВСЁ ЧТО НУЖНО ЗНАТЬ ОБ ЭТОМ""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 15.0,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.01,
+                                    ),
+                                    const Text(
+                                      """Глиссирование является одним из самых экономичных вариантов передвижения.....""",
+                                      style: TextStyle(
+                                        color: Color(0xff50626C),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14.0,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
