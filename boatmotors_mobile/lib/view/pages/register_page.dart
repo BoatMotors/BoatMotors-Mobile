@@ -753,14 +753,16 @@ class _RegisterPageState extends State<RegisterPage> {
                       ],
                     ),
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.05,
+                      height: MediaQuery.of(context).size.height * 0.03,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        SizedBox(
-                          child: Expanded(
-                            flex: 4,
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                          horizontal:
+                              MediaQuery.of(context).size.height * 0.005),
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            width: double.infinity,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -831,7 +833,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 ),
                                 SizedBox(
                                   height:
-                                      MediaQuery.of(context).size.height * 0.02,
+                                      MediaQuery.of(context).size.height * 0.01,
                                 ),
                                 const Text(
                                   """Новости:""",
@@ -868,13 +870,165 @@ class _RegisterPageState extends State<RegisterPage> {
                               ],
                             ),
                           ),
-                        ),
-                      ],
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.03,
+                          ),
+                          SizedBox(
+                            width: double.infinity,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  """Каталог товаров""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 20.0,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.02,
+                                ),
+                                const Text(
+                                  """Аксессуары к лодочным моторам""",
+                                  softWrap: true,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                _sizedBox005(context),
+                                const Text(
+                                  """Лодочные аксессуары""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                _sizedBox005(context),
+                                const Text(
+                                  """Гребные винты""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                _sizedBox005(context),
+                                const Text(
+                                  """Другое""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                _sizedBox005(context),
+                                const Text(
+                                  """Запчасти""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                _sizedBox005(context),
+                                const Text(
+                                  """Лодки ПВХ и аксессуары""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                _sizedBox005(context),
+                                const Text(
+                                  """Лодочные моторы""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                _sizedBox005(context),
+                                const Text(
+                                  """Митизы(нержавеющие)""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                _sizedBox005(context),
+                                const Text(
+                                  """Прицепы, аксессуары для прицепов""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                _sizedBox005(context),
+                                const Text(
+                                  """Смазки""",
+                                  style: TextStyle(
+                                    color: Color(0xff363636),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.03,
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.5,
+                Container(
+                  width: double.infinity,
+                  height: MediaQuery.of(context).size.height * 0.08,
+                  color: const Color(0xff001420),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Row(
+                        children: [
+                          const Text(
+                            """Наверх""",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w400,
+                              fontSize: 16.0,
+                            ),
+                          ),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.03,
+                          ),
+                          Image.asset("assets/light_arrow_top.png"),
+                        ],
+                      ),
+                      Row(
+                        children: const [
+                          Text(
+                            """@Motorsboat, 2021""",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w400,
+                              fontSize: 16.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -887,6 +1041,12 @@ class _RegisterPageState extends State<RegisterPage> {
   SizedBox _sizedBox005(BuildContext context) {
     return SizedBox(
       height: MediaQuery.of(context).size.height * 0.005,
+    );
+  }
+
+  SizedBox _sizedBox05(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.05,
     );
   }
 }
