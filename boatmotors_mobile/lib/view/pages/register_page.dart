@@ -14,6 +14,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Image.asset("assets/first.png").color,
       body: SafeArea(
@@ -26,6 +27,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     horizontal: MediaQuery.of(context).size.width * 0.025),
                 child: Column(
                   children: [
+                    /////////////////////////// Header Title UI ///////////////////////////
                     // Container(
                     //   width: double.infinity,
                     //   height: MediaQuery.of(context).size.height * 0.99,
@@ -37,11 +39,10 @@ class _RegisterPageState extends State<RegisterPage> {
                     //   ),
                     //   child: Column(
                     //     children: [
-                    //       SizedBox(
-                    //         height: MediaQuery.of(context).size.height * 0.02,
-                    //       ),
+                    //       _sizedHeightBox002(context),
                     //       Padding(
-                    //         padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                    //         padding:
+                    //             const EdgeInsets.symmetric(horizontal: 10.0),
                     //         child: Row(
                     //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     //           children: [
@@ -51,14 +52,13 @@ class _RegisterPageState extends State<RegisterPage> {
                     //                   Icons.menu,
                     //                   color: Colors.white,
                     //                 ),
-                    //                 SizedBox(
-                    //                   width: MediaQuery.of(context).size.width * 0.02,
-                    //                 ),
+                    //                 _sizedWidthBox002(context),
                     //                 Column(
                     //                   children: [
                     //                     Row(
                     //                       children: const [
-                    //                         Icon(Icons.phone, color: Colors.white),
+                    //                         Icon(Icons.phone,
+                    //                             color: Colors.white),
                     //                         Text(
                     //                           """8(999) 159 69-67""",
                     //                           style: TextStyle(
@@ -87,7 +87,8 @@ class _RegisterPageState extends State<RegisterPage> {
                     //                 Padding(
                     //                   padding: EdgeInsets.symmetric(
                     //                     horizontal:
-                    //                         MediaQuery.of(context).size.width * 0.01,
+                    //                         MediaQuery.of(context).size.width *
+                    //                             0.01,
                     //                   ),
                     //                   child: InkWell(
                     //                     onTap: () {},
@@ -109,9 +110,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     //           ],
                     //         ),
                     //       ),
-                    //       SizedBox(
-                    //         height: MediaQuery.of(context).size.height * 0.3,
-                    //       ),
+                    //       _sizedHeightBox03(context),
                     //       Center(
                     //         child: Column(
                     //           children: [
@@ -133,19 +132,20 @@ class _RegisterPageState extends State<RegisterPage> {
                     //                 ),
                     //               ),
                     //             ),
-                    //             SizedBox(
-                    //               height: MediaQuery.of(context).size.height * 0.05,
-                    //             ),
+                    //             _sizedHeightBox005(context),
                     //             Container(
-                    //               width: MediaQuery.of(context).size.width * 0.7,
-                    //               height: MediaQuery.of(context).size.height * 0.08,
+                    //               width:
+                    //                   MediaQuery.of(context).size.width * 0.7,
+                    //               height:
+                    //                   MediaQuery.of(context).size.height * 0.08,
                     //               decoration: BoxDecoration(
                     //                 border: Border.all(color: Colors.white),
                     //               ),
                     //               child: ElevatedButton(
                     //                 style: ButtonStyle(
-                    //                   backgroundColor: MaterialStateProperty.all(
-                    //                       Colors.transparent),
+                    //                   backgroundColor:
+                    //                       MaterialStateProperty.all(
+                    //                           Colors.transparent),
                     //                 ),
                     //                 onPressed: () {},
                     //                 child: Row(
@@ -173,9 +173,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(
-                              height: MediaQuery.of(context).size.height * 0.05,
-                            ),
+                            _sizedHeightBox005(context),
                             const Text(
                               """Регистрация""",
                               style: TextStyle(
@@ -184,9 +182,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 fontSize: 25.0,
                               ),
                             ),
-                            SizedBox(
-                              height: MediaQuery.of(context).size.height * 0.03,
-                            ),
+                            _sizedHeightBox003(context),
                             Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
@@ -212,11 +208,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     const Text(
                                       """Основная информация:""",
                                       style: TextStyle(
@@ -225,11 +217,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 16.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Фамилия: //
                                     Column(
                                       crossAxisAlignment:
@@ -239,12 +227,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Фамилия:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -258,11 +241,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Имя и отчество: //
                                     Column(
                                       crossAxisAlignment:
@@ -272,12 +251,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Имя и отчество::""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -291,11 +265,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Телефон: //
                                     Column(
                                       crossAxisAlignment:
@@ -305,12 +275,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Телефон:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -324,11 +289,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Email: //
                                     Column(
                                       crossAxisAlignment:
@@ -338,12 +299,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Email:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -357,11 +313,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Пароль: //
                                     Column(
                                       crossAxisAlignment:
@@ -371,12 +323,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Пароль:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -390,11 +337,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Подтвердите пароль: //
                                     Column(
                                       crossAxisAlignment:
@@ -404,12 +347,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Подтвердите пароль:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -423,11 +361,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                   ],
                                 ),
                               ),
@@ -445,9 +379,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(
-                              height: MediaQuery.of(context).size.height * 0.03,
-                            ),
+                            _sizedHeightBox003(context),
                             // const Text(
                             //   """Наш адрес:""",
                             //   style: TextStyle(
@@ -456,9 +388,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             //     fontSize: 25.0,
                             //   ),
                             // ),
-                            SizedBox(
-                              height: MediaQuery.of(context).size.height * 0.03,
-                            ),
+                            _sizedHeightBox003(context),
                             Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
@@ -484,11 +414,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     const Text(
                                       """Наш адрес:""",
                                       style: TextStyle(
@@ -497,11 +423,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 16.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Страна: //
                                     Column(
                                       crossAxisAlignment:
@@ -511,12 +433,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Страна:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -530,11 +447,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Регион: //
                                     Column(
                                       crossAxisAlignment:
@@ -544,12 +457,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Регион:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -563,11 +471,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Город: //
                                     Column(
                                       crossAxisAlignment:
@@ -577,12 +481,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Город:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -596,11 +495,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Индекс: //
                                     Column(
                                       crossAxisAlignment:
@@ -610,12 +505,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Индекс:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -629,11 +519,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                     // TEXTFORMFIELD Адрес: //
                                     Column(
                                       crossAxisAlignment:
@@ -643,12 +529,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           """Адрес:""",
                                           style: TextStyle(),
                                         ),
-                                        SizedBox(
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.01,
-                                        ),
+                                        _sizedHeightBox001(context),
                                         SizedBox(
                                           height: MediaQuery.of(context)
                                                   .size
@@ -662,18 +543,12 @@ class _RegisterPageState extends State<RegisterPage> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
+                                    _sizedHeightBox003(context),
                                   ],
                                 ),
                               ),
                             ),
-                            SizedBox(
-                              height: MediaQuery.of(context).size.height * 0.02,
-                            ),
+                            _sizedHeightBox002(context),
                           ],
                         ),
                       ),
@@ -737,25 +612,137 @@ class _RegisterPageState extends State<RegisterPage> {
                       child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all(
-                              const Color(0xff50626C)),
+                            const Color(0xff50626C),
+                          ),
                         ),
                         onPressed: () {},
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             const Text("""Продолжить"""),
-                            SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.06,
-                            ),
-                            // Image.asset("assets/light_arrow_right.png"),
-                            const Icon(Icons.arrow_right_alt_outlined),
+                            _sizedHeightBox006(context),
+                            _sizedWidthBox005(context),
+                            Image.asset("assets/light_arrow_right.png"),
                           ],
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.03,
+                    _sizedHeightBox005(context),
+                    const Divider(
+                      color: Colors.black,
                     ),
+                    _sizedHeightBox005(context),
+                    Container(
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: const BorderRadius.only(
+                          topLeft: Radius.circular(10.0),
+                          topRight: Radius.circular(10.0),
+                          bottomLeft: Radius.circular(10.0),
+                          bottomRight: Radius.circular(10.0),
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: const Offset(0, 3),
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        children: [
+                          _sizedHeightBox003(context),
+                          const Center(
+                            child: Text(
+                              """Рассылка:""",
+                              style: TextStyle(
+                                color: Color(0xff606060),
+                                fontWeight: FontWeight.w600,
+                                fontSize: 20.0,
+                              ),
+                            ),
+                          ),
+                          _sizedHeightBox003(context),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: size.width * 0.05,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  """Имя:""",
+                                  style: GoogleFonts.montserrat(
+                                    color: const Color(0xff606060),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 15.0,
+                                  ),
+                                ),
+                                _sizedHeightBox0008(context),
+                                SizedBox(
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.05,
+                                  child: TextFormField(
+                                    decoration: const InputDecoration(
+                                      border: OutlineInputBorder(),
+                                    ),
+                                  ),
+                                ),
+                                _sizedHeightBox003(context),
+                                Text(
+                                  """Email:""",
+                                  style: GoogleFonts.montserrat(
+                                    color: const Color(0xff606060),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 15.0,
+                                  ),
+                                ),
+                                _sizedHeightBox0008(context),
+                                SizedBox(
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.05,
+                                  child: TextFormField(
+                                    decoration: const InputDecoration(
+                                      border: OutlineInputBorder(),
+                                    ),
+                                  ),
+                                ),
+                                _sizedHeightBox005(context),
+                                SizedBox(
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.06,
+                                  child: ElevatedButton(
+                                    style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                        const Color(0xff50626C),
+                                      ),
+                                    ),
+                                    onPressed: () {},
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        const Text("""Отправить"""),
+                                        _sizedWidthBox005(context),
+                                        Image.asset(
+                                            "assets/light_arrow_right.png"),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                _sizedHeightBox005(context),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    _sizedHeightBox003(context),
+                    Image.asset("assets/groupBoat.png"),
+                    _sizedHeightBox002(context),
                     const Divider(
                       color: Colors.black,
                     ),
@@ -768,9 +755,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             const Icon(Icons.phone),
-                            SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.03,
-                            ),
+                            _sizedHeightBox003(context),
                             const Text(
                               """8(999) 159 69-67""",
                               style: TextStyle(
@@ -788,9 +773,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset("assets/hour.png"),
-                            SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.03,
-                            ),
+                            _sizedHeightBox003(context),
                             const Text(
                               textAlign: TextAlign.center,
                               """Пн-Вс  С 10:00 - 19:00""",
@@ -802,9 +785,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.03,
-                        ),
+                        _sizedHeightBox003(context),
                         Padding(
                           padding: EdgeInsets.symmetric(
                               horizontal:
@@ -824,11 +805,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 20.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.02,
-                                    ),
+                                    _sizedHeightBox002(context),
                                     const Text(
                                       """Новости""",
                                       style: TextStyle(
@@ -837,7 +814,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Как купить""",
                                       style: TextStyle(
@@ -846,7 +823,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Доставка""",
                                       style: TextStyle(
@@ -855,7 +832,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """О магазине""",
                                       style: TextStyle(
@@ -864,7 +841,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Гарантия""",
                                       style: TextStyle(
@@ -873,7 +850,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Контакты""",
                                       style: TextStyle(
@@ -882,11 +859,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.01,
-                                    ),
+                                    _sizedHeightBox001(context),
                                     const Text(
                                       """Новости:""",
                                       style: TextStyle(
@@ -895,11 +868,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 20.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.01,
-                                    ),
+                                    _sizedHeightBox001(context),
                                     Row(
                                       children: [
                                         Image.asset("assets/wKontakte.png"),
@@ -910,29 +879,16 @@ class _RegisterPageState extends State<RegisterPage> {
                                               0.03,
                                         ),
                                         Image.asset("assets/whatsApp.png"),
-                                        SizedBox(
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .width *
-                                              0.03,
-                                        ),
+                                        _sizedWidthBox003(context),
                                         Image.asset("assets/telegram.png"),
-                                        SizedBox(
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .width *
-                                              0.03,
-                                        ),
+                                        _sizedWidthBox003(context),
                                         Image.asset("assets/instagram.png"),
                                       ],
                                     ),
                                   ],
                                 ),
                               ),
-                              SizedBox(
-                                height:
-                                    MediaQuery.of(context).size.height * 0.03,
-                              ),
+                              _sizedHeightBox003(context),
                               SizedBox(
                                 width: double.infinity,
                                 child: Column(
@@ -946,11 +902,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 20.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.02,
-                                    ),
+                                    _sizedHeightBox002(context),
                                     const Text(
                                       """Аксессуары к лодочным моторам""",
                                       softWrap: true,
@@ -961,7 +913,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Лодочные аксессуары""",
                                       style: TextStyle(
@@ -970,7 +922,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Гребные винты""",
                                       style: TextStyle(
@@ -979,7 +931,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Другое""",
                                       style: TextStyle(
@@ -988,7 +940,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Запчасти""",
                                       style: TextStyle(
@@ -997,7 +949,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Лодки ПВХ и аксессуары""",
                                       style: TextStyle(
@@ -1006,7 +958,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Лодочные моторы""",
                                       style: TextStyle(
@@ -1015,7 +967,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Митизы(нержавеющие)""",
                                       style: TextStyle(
@@ -1024,7 +976,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Прицепы, аксессуары для прицепов""",
                                       style: TextStyle(
@@ -1033,7 +985,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         fontSize: 18.0,
                                       ),
                                     ),
-                                    _sizedBox005(context),
+                                    _sizedHeightBox0005(context),
                                     const Text(
                                       """Смазки""",
                                       style: TextStyle(
@@ -1048,9 +1000,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             ],
                           ),
                         ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.03,
-                        ),
+                        _sizedHeightBox003(context),
                       ],
                     ),
                   ],
@@ -1073,9 +1023,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             fontSize: 16.0,
                           ),
                         ),
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.03,
-                        ),
+                        _sizedWidthBox003(context),
                         Image.asset("assets/light_arrow_top.png"),
                       ],
                     ),
@@ -1101,15 +1049,126 @@ class _RegisterPageState extends State<RegisterPage> {
     );
   }
 
-  SizedBox _sizedBox005(BuildContext context) {
+  //////////////////////////////////////// HEIGHT SIZEDBOXS ////////////////////////////////////////
+
+  // HEIGHT _sizedHeightBox1
+  SizedBox _sizedHeightBox1(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 1,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox05
+  SizedBox _sizedHeightBox05(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.5,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox03
+  SizedBox _sizedHeightBox03(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.3,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox008
+  SizedBox _sizedHeightBox008(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.08,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox006
+  SizedBox _sizedHeightBox006(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.06,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox005
+  SizedBox _sizedHeightBox005(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.05,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox003
+  SizedBox _sizedHeightBox003(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.03,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox002
+  SizedBox _sizedHeightBox002(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.02,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox001
+  SizedBox _sizedHeightBox001(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.01,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0008
+  SizedBox _sizedHeightBox0008(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.008,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0007
+  SizedBox _sizedHeightBox0007(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.007,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0006
+  SizedBox _sizedHeightBox0006(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.006,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0005
+  SizedBox _sizedHeightBox0005(BuildContext context) {
     return SizedBox(
       height: MediaQuery.of(context).size.height * 0.005,
     );
   }
 
-  SizedBox _sizedBox05(BuildContext context) {
+  //////////////////////////////////////// WIDTH SIZEDBOXS ////////////////////////////////////////
+
+  // WIDTH _sizedWidthBox005
+  SizedBox _sizedWidthBox005(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.05,
+      width: MediaQuery.of(context).size.width * 0.05,
+    );
+  }
+
+  // WIDTH _sizedWidthBox003
+  SizedBox _sizedWidthBox003(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.03,
+    );
+  }
+
+  // WIDTH _sizedWidthBox002
+  SizedBox _sizedWidthBox002(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.02,
+    );
+  }
+
+  // WIDTH _sizedWidthBox001
+  SizedBox _sizedWidthBox001(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.01,
     );
   }
 }

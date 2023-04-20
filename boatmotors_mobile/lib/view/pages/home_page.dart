@@ -29,9 +29,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 child: Column(
                   children: [
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.02,
-                    ),
+                    _sizedHeightBox002(context),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       child: Row(
@@ -43,9 +41,7 @@ class _HomePageState extends State<HomePage> {
                                 Icons.menu,
                                 color: Colors.white,
                               ),
-                              SizedBox(
-                                width: MediaQuery.of(context).size.width * 0.02,
-                              ),
+                              _sizedWidthBox002(context),
                               Column(
                                 children: [
                                   Row(
@@ -101,9 +97,7 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.3,
-                    ),
+                    _sizedHeightBox03(context),
                     Center(
                       child: Column(
                         children: [
@@ -125,9 +119,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.05,
-                          ),
+                          _sizedHeightBox005(context),
                           Container(
                             width: MediaQuery.of(context).size.width * 0.7,
                             height: MediaQuery.of(context).size.height * 0.08,
@@ -143,9 +135,9 @@ class _HomePageState extends State<HomePage> {
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceAround,
-                                children: const [
-                                  Text("""Перейти в каталог"""),
-                                  Icon(Icons.arrow_right_alt_outlined),
+                                children: [
+                                  const Text("""Перейти в каталог"""),
+                                  Image.asset("assets/light_arrow_right.png"),
                                 ],
                               ),
                             ),
@@ -158,9 +150,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Column(
                 children: [
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.05,
-                  ),
+                  _sizedHeightBox005(context),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 10.0),
                     child: Column(
@@ -197,10 +187,7 @@ class _HomePageState extends State<HomePage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              SizedBox(
-                                height:
-                                    MediaQuery.of(context).size.height * 0.05,
-                              ),
+                              _sizedHeightBox005(context),
                             ],
                           ),
                         ),
@@ -314,9 +301,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.05,
-                        ),
+                        _sizedHeightBox005(context),
                         // Row 2 //
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -427,9 +412,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.05,
-                        ),
+                        _sizedHeightBox005(context),
                         // Row 3 //
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -540,9 +523,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.05,
-                        ),
+                        _sizedHeightBox005(context),
                         // Row 4 //
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -653,19 +634,16 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.05,
-                        ),
+                        _sizedHeightBox005(context),
                         Padding(
                           padding: EdgeInsets.only(
                               left: MediaQuery.of(context).size.width * 0.09),
                           child: Row(
                             children: [
                               // Image.asset("assets/arrow_left.png"),
-                              const Icon(Icons.subdirectory_arrow_left_rounded),
-                              SizedBox(
-                                width: MediaQuery.of(context).size.width * 0.03,
-                              ),
+                              // const Icon(Icons.subdirectory_arrow_left_rounded),
+                              Image.asset("assets/light_arrow_left.png"),
+                              _sizedWidthBox005(context),
                               Text(
                                 """Назад""",
                                 style: GoogleFonts.montserrat(
@@ -674,25 +652,16 @@ class _HomePageState extends State<HomePage> {
                                   fontSize: 15.0,
                                 ),
                               ),
-                              SizedBox(
-                                width: MediaQuery.of(context).size.width * 0.05,
-                              ),
+                              _sizedWidthBox003(context),
+                              _sizedWidthBox005(context),
                               const Text("""1"""),
-                              SizedBox(
-                                width: MediaQuery.of(context).size.width * 0.03,
-                              ),
+                              _sizedWidthBox003(context),
                               const Text("""2"""),
-                              SizedBox(
-                                width: MediaQuery.of(context).size.width * 0.03,
-                              ),
+                              _sizedWidthBox003(context),
                               const Text("""3"""),
-                              SizedBox(
-                                width: MediaQuery.of(context).size.width * 0.03,
-                              ),
+                              _sizedWidthBox003(context),
                               const Text("""4"""),
-                              SizedBox(
-                                width: MediaQuery.of(context).size.width * 0.03,
-                              ),
+                              _sizedWidthBox003(context),
                               const Text("""110"""),
                             ],
                           ),
@@ -703,7 +672,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.15,
+                height: MediaQuery.of(context).size.height * 0.10,
               ),
               // Категории //
               Padding(
@@ -724,13 +693,11 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 23.0,
                             ),
                           ),
-                          SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.06,
-                          ),
+                          _sizedHeightBox005(context),
                         ],
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       child: Column(
                         children: [
                           // Категории Row 1 //
@@ -772,11 +739,7 @@ class _HomePageState extends State<HomePage> {
                                         fontSize: 15.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     const Text(
                                       """Gladiator
 Sea-Pro
@@ -789,11 +752,7 @@ Yamaha""",
                                         fontSize: 14,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
@@ -808,6 +767,7 @@ Yamaha""",
                                             fontSize: 14.0,
                                           ),
                                         ),
+                                        _sizedWidthBox003(context),
                                         Image.asset("assets/arrow_right.png"),
                                       ],
                                     ),
@@ -849,11 +809,7 @@ Yamaha""",
                                         fontSize: 15.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     const Text(
                                       """Gladiator
 Sea-Pro
@@ -866,11 +822,7 @@ Yamaha""",
                                         fontSize: 14,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
@@ -885,6 +837,7 @@ Yamaha""",
                                             fontSize: 14.0,
                                           ),
                                         ),
+                                        _sizedWidthBox003(context),
                                         Image.asset("assets/arrow_right.png"),
                                       ],
                                     ),
@@ -935,11 +888,7 @@ Yamaha""",
                                         fontSize: 15.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     const Text(
                                       """Gladiator
 Sea-Pro
@@ -952,11 +901,7 @@ Yamaha""",
                                         fontSize: 14,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
@@ -971,6 +916,7 @@ Yamaha""",
                                             fontSize: 14.0,
                                           ),
                                         ),
+                                        _sizedWidthBox003(context),
                                         Image.asset("assets/arrow_right.png"),
                                       ],
                                     ),
@@ -1012,11 +958,7 @@ Yamaha""",
                                         fontSize: 15.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     const Text(
                                       """Gladiator
 Sea-Pro
@@ -1029,11 +971,7 @@ Yamaha""",
                                         fontSize: 14,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
@@ -1048,6 +986,7 @@ Yamaha""",
                                             fontSize: 14.0,
                                           ),
                                         ),
+                                        _sizedWidthBox003(context),
                                         Image.asset("assets/arrow_right.png"),
                                       ],
                                     ),
@@ -1098,11 +1037,7 @@ Yamaha""",
                                         fontSize: 15.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     const Text(
                                       """Gladiator
 Sea-Pro
@@ -1115,11 +1050,7 @@ Yamaha""",
                                         fontSize: 14,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
@@ -1134,6 +1065,7 @@ Yamaha""",
                                             fontSize: 14.0,
                                           ),
                                         ),
+                                        _sizedWidthBox003(context),
                                         Image.asset("assets/arrow_right.png"),
                                       ],
                                     ),
@@ -1175,11 +1107,7 @@ Yamaha""",
                                         fontSize: 15.0,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     const Text(
                                       """Gladiator
 Sea-Pro
@@ -1192,11 +1120,7 @@ Yamaha""",
                                         fontSize: 14,
                                       ),
                                     ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.007,
-                                    ),
+                                    _sizedHeightBox0007(context),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
@@ -1211,6 +1135,7 @@ Yamaha""",
                                             fontSize: 14.0,
                                           ),
                                         ),
+                                        _sizedWidthBox003(context),
                                         Image.asset("assets/arrow_right.png"),
                                       ],
                                     ),
@@ -1225,9 +1150,7 @@ Yamaha""",
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.06,
-                    ),
+                    _sizedHeightBox006(context),
                     // Статьи //
                     Column(
                       children: [
@@ -1244,10 +1167,7 @@ Yamaha""",
                                   fontSize: 23.0,
                                 ),
                               ),
-                              SizedBox(
-                                height:
-                                    MediaQuery.of(context).size.height * 0.05,
-                              ),
+                              _sizedHeightBox005(context),
                             ],
                           ),
                         ),
@@ -1255,130 +1175,10 @@ Yamaha""",
                         Row(
                           children: [
                             Container(
-                              width: MediaQuery.of(context).size.width * 0.430,
-                              // height: MediaQuery.of(context).size.height * 0.2,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(10.0),
-                                  topRight: Radius.circular(10.0),
-                                  bottomLeft: Radius.circular(10.0),
-                                  bottomRight: Radius.circular(10.0),
-                                ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey.withOpacity(0.5),
-                                    spreadRadius: 5,
-                                    blurRadius: 7,
-                                    offset: const Offset(0, 3),
-                                  ),
+                              child: Column(
+                                children: [
+                                  Image.asset("assets/boat.png"),
                                 ],
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Positioned(
-                                      bottom: 20.0,
-                                      right: 20.0,
-                                      child: Image.asset("assets/boat.png"),
-                                    ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
-                                    const Text(
-                                      """ГЛИССИРОВАНИЕ НАДУВНЫХ ЛОДОК И ВСЁ ЧТО НУЖНО ЗНАТЬ ОБ ЭТОМ""",
-                                      style: TextStyle(
-                                        color: Color(0xff50626C),
-                                        fontWeight: FontWeight.w700,
-                                        fontSize: 15.0,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.01,
-                                    ),
-                                    const Text(
-                                      """Глиссирование является одним из самых экономичных вариантов передвижения.....""",
-                                      style: TextStyle(
-                                        color: Color(0xff50626C),
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 14.0,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        // Статьи Row 2 //
-                        Row(
-                          children: [
-                            Container(
-                              width: MediaQuery.of(context).size.width * 0.430,
-                              // height: MediaQuery.of(context).size.height * 0.2,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(10.0),
-                                  topRight: Radius.circular(10.0),
-                                  bottomLeft: Radius.circular(10.0),
-                                  bottomRight: Radius.circular(10.0),
-                                ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey.withOpacity(0.5),
-                                    spreadRadius: 5,
-                                    blurRadius: 7,
-                                    offset: const Offset(0, 3),
-                                  ),
-                                ],
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Positioned(
-                                      bottom: 20.0,
-                                      right: 20.0,
-                                      child: Image.asset("assets/boat.png"),
-                                    ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.03,
-                                    ),
-                                    const Text(
-                                      """ГЛИССИРОВАНИЕ НАДУВНЫХ ЛОДОК И ВСЁ ЧТО НУЖНО ЗНАТЬ ОБ ЭТОМ""",
-                                      style: TextStyle(
-                                        color: Color(0xff50626C),
-                                        fontWeight: FontWeight.w700,
-                                        fontSize: 15.0,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.01,
-                                    ),
-                                    const Text(
-                                      """Глиссирование является одним из самых экономичных вариантов передвижения.....""",
-                                      style: TextStyle(
-                                        color: Color(0xff50626C),
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 14.0,
-                                      ),
-                                    )
-                                  ],
-                                ),
                               ),
                             ),
                           ],
@@ -1387,10 +1187,8 @@ Yamaha""",
                     ),
                   ],
                 ),
-              ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.5,
-              ),
+              ),  
+              _sizedHeightBox05(context),
             ],
           ),
         ),
@@ -1398,9 +1196,126 @@ Yamaha""",
     );
   }
 
-  // _textFormField() => TextFormField(
-  //       decoration: const InputDecoration(
-  //         border: OutlineInputBorder(),
-  //       ),
-  //     );
+  //////////////////////////////////////// HEIGHT SIZEDBOXS ////////////////////////////////////////
+
+  // HEIGHT _sizedHeightBox1
+  SizedBox _sizedHeightBox1(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 1,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox05
+  SizedBox _sizedHeightBox05(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.5,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox03
+  SizedBox _sizedHeightBox03(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.3,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox008
+  SizedBox _sizedHeightBox008(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.08,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox006
+  SizedBox _sizedHeightBox006(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.06,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox005
+  SizedBox _sizedHeightBox005(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.05,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox003
+  SizedBox _sizedHeightBox003(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.03,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox002
+  SizedBox _sizedHeightBox002(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.02,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox001
+  SizedBox _sizedHeightBox001(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.01,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0008
+  SizedBox _sizedHeightBox0008(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.008,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0007
+  SizedBox _sizedHeightBox0007(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.007,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0006
+  SizedBox _sizedHeightBox0006(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.006,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0005
+  SizedBox _sizedHeightBox0005(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.005,
+    );
+  }
+
+  //////////////////////////////////////// WIDTH SIZEDBOXS ////////////////////////////////////////
+
+  // WIDTH _sizedWidthBox005
+  SizedBox _sizedWidthBox005(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.05,
+    );
+  }
+
+  // WIDTH _sizedWidthBox003
+  SizedBox _sizedWidthBox003(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.03,
+    );
+  }
+
+  // WIDTH _sizedWidthBox002
+  SizedBox _sizedWidthBox002(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.02,
+    );
+  }
+
+  // WIDTH _sizedWidthBox001
+  SizedBox _sizedWidthBox001(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.01,
+    );
+  }
 }

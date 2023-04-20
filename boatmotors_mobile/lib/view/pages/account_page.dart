@@ -27,9 +27,7 @@ class _AccountPageState extends State<AccountPage> {
               ),
               child: Column(
                 children: [
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.02,
-                  ),
+                  _sizedHeightBox002(context),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 10.0),
                     child: Row(
@@ -41,9 +39,7 @@ class _AccountPageState extends State<AccountPage> {
                               Icons.menu,
                               color: Colors.white,
                             ),
-                            SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.02,
-                            ),
+                            _sizedWidthBox002(context),
                             Column(
                               children: [
                                 Row(
@@ -99,9 +95,7 @@ class _AccountPageState extends State<AccountPage> {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.3,
-                  ),
+                  _sizedHeightBox03(context),
                   Center(
                     child: Column(
                       children: [
@@ -124,9 +118,7 @@ class _AccountPageState extends State<AccountPage> {
                         //     ),
                         //   ),
                         // ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.05,
-                        ),
+                        _sizedHeightBox005(context),
                         Container(
                           width: MediaQuery.of(context).size.width * 0.7,
                           height: MediaQuery.of(context).size.height * 0.08,
@@ -154,9 +146,7 @@ class _AccountPageState extends State<AccountPage> {
                 ],
               ),
             ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.05,
-            ),
+            _sizedHeightBox005(context),
 
             /////////////////////////// ///////////////////////////
             Padding(
@@ -167,7 +157,7 @@ class _AccountPageState extends State<AccountPage> {
                   const Divider(
                     color: Colors.black,
                   ),
-                  _sizedBox05(context),
+                  _sizedHeightBox005(context),
                   SizedBox(
                     child: Image.asset("assets/boatmotors.png"),
                   ),
@@ -175,9 +165,7 @@ class _AccountPageState extends State<AccountPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Icon(Icons.phone),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.03,
-                      ),
+                      _sizedWidthBox003(context),
                       const Text(
                         """8(999) 159 69-67""",
                         style: TextStyle(
@@ -195,9 +183,7 @@ class _AccountPageState extends State<AccountPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset("assets/hour.png"),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.03,
-                      ),
+                      _sizedWidthBox003(context),
                       const Text(
                         textAlign: TextAlign.center,
                         """Пн-Вс  С 10:00 - 19:00""",
@@ -209,12 +195,11 @@ class _AccountPageState extends State<AccountPage> {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.03,
-                  ),
+                  _sizedHeightBox003(context),
                   Padding(
                     padding: EdgeInsets.symmetric(
-                        horizontal: MediaQuery.of(context).size.height * 0.005),
+                      horizontal: MediaQuery.of(context).size.height * 0.005,
+                    ),
                     child: Column(
                       children: [
                         SizedBox(
@@ -230,10 +215,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 20.0,
                                 ),
                               ),
-                              SizedBox(
-                                height:
-                                    MediaQuery.of(context).size.height * 0.02,
-                              ),
+                              _sizedHeightBox002(context),
                               const Text(
                                 """Новости""",
                                 style: TextStyle(
@@ -242,7 +224,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Как купить""",
                                 style: TextStyle(
@@ -251,7 +233,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Доставка""",
                                 style: TextStyle(
@@ -260,7 +242,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """О магазине""",
                                 style: TextStyle(
@@ -269,7 +251,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Гарантия""",
                                 style: TextStyle(
@@ -278,7 +260,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Контакты""",
                                 style: TextStyle(
@@ -287,10 +269,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              SizedBox(
-                                height:
-                                    MediaQuery.of(context).size.height * 0.01,
-                              ),
+                              _sizedHeightBox001(context),
                               const Text(
                                 """Новости:""",
                                 style: TextStyle(
@@ -299,36 +278,22 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 20.0,
                                 ),
                               ),
-                              SizedBox(
-                                height:
-                                    MediaQuery.of(context).size.height * 0.01,
-                              ),
+                              _sizedHeightBox001(context),
                               Row(
                                 children: [
                                   Image.asset("assets/wKontakte.png"),
-                                  SizedBox(
-                                    width: MediaQuery.of(context).size.width *
-                                        0.03,
-                                  ),
+                                  _sizedWidthBox003(context),
                                   Image.asset("assets/whatsApp.png"),
-                                  SizedBox(
-                                    width: MediaQuery.of(context).size.width *
-                                        0.03,
-                                  ),
+                                  _sizedWidthBox003(context),
                                   Image.asset("assets/telegram.png"),
-                                  SizedBox(
-                                    width: MediaQuery.of(context).size.width *
-                                        0.03,
-                                  ),
+                                  _sizedWidthBox003(context),
                                   Image.asset("assets/instagram.png"),
                                 ],
                               ),
                             ],
                           ),
                         ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.03,
-                        ),
+                        _sizedHeightBox003(context),
                         SizedBox(
                           width: double.infinity,
                           child: Column(
@@ -342,10 +307,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 20.0,
                                 ),
                               ),
-                              SizedBox(
-                                height:
-                                    MediaQuery.of(context).size.height * 0.02,
-                              ),
+                              _sizedHeightBox002(context),
                               const Text(
                                 """Аксессуары к лодочным моторам""",
                                 softWrap: true,
@@ -356,7 +318,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Лодочные аксессуары""",
                                 style: TextStyle(
@@ -365,7 +327,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Гребные винты""",
                                 style: TextStyle(
@@ -374,7 +336,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Другое""",
                                 style: TextStyle(
@@ -383,7 +345,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Запчасти""",
                                 style: TextStyle(
@@ -392,7 +354,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Лодки ПВХ и аксессуары""",
                                 style: TextStyle(
@@ -401,7 +363,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Лодочные моторы""",
                                 style: TextStyle(
@@ -410,7 +372,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Митизы(нержавеющие)""",
                                 style: TextStyle(
@@ -419,7 +381,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Прицепы, аксессуары для прицепов""",
                                 style: TextStyle(
@@ -428,7 +390,7 @@ class _AccountPageState extends State<AccountPage> {
                                   fontSize: 18.0,
                                 ),
                               ),
-                              _sizedBox005(context),
+                              _sizedHeightBox0005(context),
                               const Text(
                                 """Смазки""",
                                 style: TextStyle(
@@ -443,9 +405,7 @@ class _AccountPageState extends State<AccountPage> {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.03,
-                  ),
+                  _sizedHeightBox003(context),
                 ],
               ),
             ),
@@ -466,9 +426,7 @@ class _AccountPageState extends State<AccountPage> {
                           fontSize: 16.0,
                         ),
                       ),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.03,
-                      ),
+                      _sizedWidthBox003(context),
                       Image.asset("assets/light_arrow_top.png"),
                     ],
                   ),
@@ -493,15 +451,126 @@ class _AccountPageState extends State<AccountPage> {
     );
   }
 
-  SizedBox _sizedBox005(BuildContext context) {
+  //////////////////////////////////////// HEIGHT SIZEDBOXS ////////////////////////////////////////
+
+  // HEIGHT _sizedHeightBox1
+  SizedBox _sizedHeightBox1(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 1,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox05
+  SizedBox _sizedHeightBox05(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.5,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox03
+  SizedBox _sizedHeightBox03(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.3,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox008
+  SizedBox _sizedHeightBox008(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.08,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox006
+  SizedBox _sizedHeightBox006(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.06,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox005
+  SizedBox _sizedHeightBox005(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.05,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox003
+  SizedBox _sizedHeightBox003(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.03,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox002
+  SizedBox _sizedHeightBox002(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.02,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox001
+  SizedBox _sizedHeightBox001(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.01,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0008
+  SizedBox _sizedHeightBox0008(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.008,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0007
+  SizedBox _sizedHeightBox0007(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.007,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0006
+  SizedBox _sizedHeightBox0006(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.006,
+    );
+  }
+
+  // HEIGHT _sizedHeightBox0005
+  SizedBox _sizedHeightBox0005(BuildContext context) {
     return SizedBox(
       height: MediaQuery.of(context).size.height * 0.005,
     );
   }
 
-  SizedBox _sizedBox05(BuildContext context) {
+  //////////////////////////////////////// WIDTH SIZEDBOXS ////////////////////////////////////////
+
+  // WIDTH _sizedWidthBox005
+  SizedBox _sizedWidthBox005(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.05,
+      width: MediaQuery.of(context).size.width * 0.05,
+    );
+  }
+
+  // WIDTH _sizedWidthBox003
+  SizedBox _sizedWidthBox003(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.03,
+    );
+  }
+
+  // WIDTH _sizedWidthBox002
+  SizedBox _sizedWidthBox002(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.02,
+    );
+  }
+
+  // WIDTH _sizedWidthBox001
+  SizedBox _sizedWidthBox001(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.01,
     );
   }
 }
