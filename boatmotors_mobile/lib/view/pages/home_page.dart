@@ -11,6 +11,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Image.asset("assets/first.png").color,
       body: SafeArea(
@@ -115,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                               textStyle: const TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w400,
-                                fontSize: 40,
+                                fontSize: 42,
                               ),
                             ),
                           ),
@@ -1168,27 +1169,747 @@ Yamaha""",
                                 ),
                               ),
                               _sizedHeightBox005(context),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                  Container(
+                                    width: size.width * 0.43,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: const BorderRadius.all(
+                                        Radius.circular(10.0),
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.5),
+                                          spreadRadius: 5,
+                                          blurRadius: 7,
+                                          offset: const Offset(0, 3),
+                                        ),
+                                      ],
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsets.symmetric(
+                                          horizontal: size.width * 0.022,
+                                          vertical: size.height * 0.022),
+                                      child: Column(
+                                        children: [
+                                          Image.asset("assets/boat.png"),
+                                          _sizedHeightBox002(context),
+                                          const Text(
+                                            "ГЛИССИРОВАНИЕ НАДУВНЫХ ЛОДОК И ВСЁ ЧТО НУЖНО ЗНАТЬ ОБ ЭТОМ",
+                                            style: TextStyle(
+                                              color: Color(0xff50626C),
+                                              fontWeight: FontWeight.w700,
+                                              fontSize: 16.0,
+                                            ),
+                                          ),
+                                          _sizedHeightBox001(context),
+                                          const Text(
+                                            "Глиссирование является одним из самых экономичных вариантов передвижения.....",
+                                            style: TextStyle(
+                                              color: Color(0xff50626C),
+                                              fontWeight: FontWeight.w400,
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    width: size.width * 0.43,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: const BorderRadius.all(
+                                        Radius.circular(10.0),
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.5),
+                                          spreadRadius: 5,
+                                          blurRadius: 7,
+                                          offset: const Offset(0, 3),
+                                        ),
+                                      ],
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsets.symmetric(
+                                          horizontal: size.width * 0.022,
+                                          vertical: size.height * 0.022),
+                                      child: Column(
+                                        children: [
+                                          Image.asset("assets/boat.png"),
+                                          _sizedHeightBox002(context),
+                                          const Text(
+                                            "ГЛИССИРОВАНИЕ НАДУВНЫХ ЛОДОК И ВСЁ ЧТО НУЖНО ЗНАТЬ ОБ ЭТОМ",
+                                            style: TextStyle(
+                                              color: Color(0xff50626C),
+                                              fontWeight: FontWeight.w700,
+                                              fontSize: 16.0,
+                                            ),
+                                          ),
+                                          _sizedHeightBox001(context),
+                                          const Text(
+                                            "Глиссирование является одним из самых экономичных вариантов передвижения.....",
+                                            style: TextStyle(
+                                              color: Color(0xff50626C),
+                                              fontWeight: FontWeight.w400,
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              _sizedHeightBox002(context),
+                              Container(
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: const BorderRadius.all(
+                                    Radius.circular(10.0),
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: size.width * 0.022,
+                                      vertical: size.height * 0.022),
+                                  child: Column(
+                                    children: [
+                                      SizedBox(
+                                        width: 250.0,
+                                        height: 100.0,
+                                        child: Image.asset("assets/boat.png"),
+                                      ),
+                                      _sizedHeightBox002(context),
+                                      const Text(
+                                        "ГЛИССИРОВАНИЕ НАДУВНЫХ ЛОДОК И ВСЁ ЧТО НУЖНО ЗНАТЬ ОБ ЭТОМ",
+                                        style: TextStyle(
+                                          color: Color(0xff50626C),
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 16.0,
+                                        ),
+                                      ),
+                                      _sizedHeightBox001(context),
+                                      const Text(
+                                        "Глиссирование является одним из самых экономичных вариантов передвижения.....",
+                                        style: TextStyle(
+                                          color: Color(0xff50626C),
+                                          fontWeight: FontWeight.w400,
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         ),
-                        // Статьи Row 1 //
+                      ],
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.025,
+                    ),
+                    Column(
+                      children: [
+                        _sizedHeightBox006(context),
+                        SizedBox(
+                          width: double.infinity,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: const [
+                              Text(
+                                "Последние отзывы",
+                                style: TextStyle(
+                                  color: Color(0xff363636),
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 23.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        _sizedHeightBox005(context),
+                        Container(
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(10.0),
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset: const Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: size.width * 0.022,
+                                vertical: size.height * 0.022),
+                            child: Column(
+                              children: [
+                                SizedBox(
+                                  width: 250.0,
+                                  height: 100.0,
+                                  child: Image.asset("assets/motor.png"),
+                                ),
+                                _sizedHeightBox002(context),
+                                const Text(
+                                  "Лодочный мотор HIDEA (Хайди) HD 9.9 FHS",
+                                  style: TextStyle(
+                                    color: Color(0xff50626C),
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 16.0,
+                                  ),
+                                ),
+                                _sizedHeightBox001(context),
+                                const Text(
+                                  "Эксплуатирую 3 сезона",
+                                  style: TextStyle(
+                                    color: Color(0xff50626C),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        _sizedHeightBox002(context),
+                        Container(
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(10.0),
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset: const Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: size.width * 0.022,
+                                vertical: size.height * 0.022),
+                            child: Column(
+                              children: [
+                                SizedBox(
+                                  width: 250.0,
+                                  height: 100.0,
+                                  child: Image.asset("assets/motor.png"),
+                                ),
+                                _sizedHeightBox002(context),
+                                const Text(
+                                  "Лодочный мотор HIDEA (Хайди) HD 9.9 FHS",
+                                  style: TextStyle(
+                                    color: Color(0xff50626C),
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 16.0,
+                                  ),
+                                ),
+                                _sizedHeightBox001(context),
+                                const Text(
+                                  "Эксплуатирую 3 сезона",
+                                  style: TextStyle(
+                                    color: Color(0xff50626C),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        _sizedHeightBox002(context),
+                        Container(
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(10.0),
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset: const Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: size.width * 0.022,
+                                vertical: size.height * 0.022),
+                            child: Column(
+                              children: [
+                                SizedBox(
+                                  width: 250.0,
+                                  height: 100.0,
+                                  child: Image.asset("assets/motor.png"),
+                                ),
+                                _sizedHeightBox002(context),
+                                const Text(
+                                  "Лодочный мотор HIDEA (Хайди) HD 9.9 FHS",
+                                  style: TextStyle(
+                                    color: Color(0xff50626C),
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 16.0,
+                                  ),
+                                ),
+                                _sizedHeightBox001(context),
+                                const Text(
+                                  "Эксплуатирую 3 сезона",
+                                  style: TextStyle(
+                                    color: Color(0xff50626C),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    _sizedHeightBox008(context),
+                    const Divider(
+                      color: Colors.black,
+                    ),
+                    _sizedHeightBox005(context),
+                    Container(
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: const BorderRadius.only(
+                          topLeft: Radius.circular(10.0),
+                          topRight: Radius.circular(10.0),
+                          bottomLeft: Radius.circular(10.0),
+                          bottomRight: Radius.circular(10.0),
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: const Offset(0, 3),
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        children: [
+                          _sizedHeightBox003(context),
+                          const Center(
+                            child: Text(
+                              """Рассылка:""",
+                              style: TextStyle(
+                                color: Color(0xff606060),
+                                fontWeight: FontWeight.w600,
+                                fontSize: 20.0,
+                              ),
+                            ),
+                          ),
+                          _sizedHeightBox003(context),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: size.width * 0.05,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  """Имя:""",
+                                  style: GoogleFonts.montserrat(
+                                    color: const Color(0xff606060),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 15.0,
+                                  ),
+                                ),
+                                _sizedHeightBox0008(context),
+                                SizedBox(
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.05,
+                                  child: TextFormField(
+                                    decoration: const InputDecoration(
+                                      border: OutlineInputBorder(),
+                                    ),
+                                  ),
+                                ),
+                                _sizedHeightBox003(context),
+                                Text(
+                                  """Email:""",
+                                  style: GoogleFonts.montserrat(
+                                    color: const Color(0xff606060),
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 15.0,
+                                  ),
+                                ),
+                                _sizedHeightBox0008(context),
+                                SizedBox(
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.05,
+                                  child: TextFormField(
+                                    decoration: const InputDecoration(
+                                      border: OutlineInputBorder(),
+                                    ),
+                                  ),
+                                ),
+                                _sizedHeightBox005(context),
+                                SizedBox(
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.06,
+                                  child: ElevatedButton(
+                                    style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                        const Color(0xff50626C),
+                                      ),
+                                    ),
+                                    onPressed: () {},
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        const Text("""Отправить"""),
+                                        _sizedWidthBox005(context),
+                                        Image.asset(
+                                            "assets/light_arrow_right.png"),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                _sizedHeightBox005(context),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    _sizedHeightBox003(context),
+                    Image.asset("assets/groupBoat.png"),
+                    _sizedHeightBox002(context),
+                    const Divider(
+                      color: Colors.black,
+                    ),
+                    Column(
+                      children: [
+                        SizedBox(
+                          child: Image.asset("assets/boatmotors.png"),
+                        ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Container(
-                              child: Column(
-                                children: [
-                                  Image.asset("assets/boat.png"),
-                                ],
+                            const Icon(Icons.phone),
+                            _sizedHeightBox003(context),
+                            const Text(
+                              """8(999) 159 69-67""",
+                              style: TextStyle(
+                                color: Color(0xff363636),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 15.0,
                               ),
                             ),
                           ],
+                        ),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.012,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/hour.png"),
+                            _sizedHeightBox003(context),
+                            const Text(
+                              textAlign: TextAlign.center,
+                              """Пн-Вс  С 10:00 - 19:00""",
+                              style: TextStyle(
+                                color: Color(0xff363636),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 15.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                        _sizedHeightBox003(context),
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal:
+                                  MediaQuery.of(context).size.height * 0.005),
+                          child: Column(
+                            children: [
+                              SizedBox(
+                                width: double.infinity,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const Text(
+                                      """О магазине""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 20.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox002(context),
+                                    const Text(
+                                      """Новости""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Как купить""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Доставка""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """О магазине""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Гарантия""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Контакты""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox001(context),
+                                    const Text(
+                                      """Новости:""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 20.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox001(context),
+                                    Row(
+                                      children: [
+                                        Image.asset("assets/wKontakte.png"),
+                                        SizedBox(
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.03,
+                                        ),
+                                        Image.asset("assets/whatsApp.png"),
+                                        _sizedWidthBox003(context),
+                                        Image.asset("assets/telegram.png"),
+                                        _sizedWidthBox003(context),
+                                        Image.asset("assets/instagram.png"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              _sizedHeightBox003(context),
+                              SizedBox(
+                                width: double.infinity,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const Text(
+                                      """Каталог товаров""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 20.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox002(context),
+                                    const Text(
+                                      """Аксессуары к лодочным моторам""",
+                                      softWrap: true,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Лодочные аксессуары""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Гребные винты""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Другое""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Запчасти""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Лодки ПВХ и аксессуары""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Лодочные моторы""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Митизы(нержавеющие)""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Прицепы, аксессуары для прицепов""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    _sizedHeightBox0005(context),
+                                    const Text(
+                                      """Смазки""",
+                                      style: TextStyle(
+                                        color: Color(0xff363636),
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        _sizedHeightBox003(context),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                width: double.infinity,
+                height: MediaQuery.of(context).size.height * 0.08,
+                color: const Color(0xff001420),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Row(
+                      children: [
+                        const Text(
+                          """Наверх""",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 16.0,
+                          ),
+                        ),
+                        _sizedWidthBox003(context),
+                        Image.asset("assets/light_arrow_top.png"),
+                      ],
+                    ),
+                    Row(
+                      children: const [
+                        Text(
+                          """@Motorsboat, 2021""",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 16.0,
+                          ),
                         ),
                       ],
                     ),
                   ],
                 ),
-              ),  
-              _sizedHeightBox05(context),
+              ),
             ],
           ),
         ),
