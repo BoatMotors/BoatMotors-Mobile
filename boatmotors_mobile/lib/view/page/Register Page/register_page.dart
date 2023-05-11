@@ -145,9 +145,10 @@ class _RegisterPageState extends State<RegisterPage> {
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceAround,
-                                    children: const [
-                                      Text("""Перейти к регистрации"""),
-                                      Icon(Icons.arrow_right_alt_outlined),
+                                    children: [
+                                      const Text("""Перейти к регистрации"""),
+                                      Image.asset(
+                                          "assets/light_arrow_right.png"),
                                     ],
                                   ),
                                 ),
@@ -161,13 +162,15 @@ class _RegisterPageState extends State<RegisterPage> {
 
                   /////////////////////////// Регистрация ///////////////////////////
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: size.width * 0.035),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: size.width * 0.035),
                     child: Column(
                       children: [
                         SizedBox(
                           width: double.infinity,
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 0.0),
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 0.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -233,7 +236,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -257,7 +261,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -281,7 +286,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -305,7 +311,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -329,7 +336,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -353,7 +361,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -369,12 +378,13 @@ class _RegisterPageState extends State<RegisterPage> {
                             ),
                           ),
                         ),
-                  
+
                         /////////////////////////// Наш адрес: ///////////////////////////
                         SizedBox(
                           width: double.infinity,
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 0.0),
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 0.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -440,7 +450,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -464,7 +475,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -488,7 +500,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -512,7 +525,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -536,7 +550,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       .height *
                                                   0.05,
                                               child: TextFormField(
-                                                decoration: const InputDecoration(
+                                                decoration:
+                                                    const InputDecoration(
                                                   border: OutlineInputBorder(),
                                                 ),
                                               ),
@@ -682,8 +697,9 @@ class _RegisterPageState extends State<RegisterPage> {
                                     ),
                                     _sizedHeightBox0008(context),
                                     SizedBox(
-                                      height: MediaQuery.of(context).size.height *
-                                          0.05,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.05,
                                       child: TextFormField(
                                         decoration: const InputDecoration(
                                           border: OutlineInputBorder(),
@@ -701,8 +717,9 @@ class _RegisterPageState extends State<RegisterPage> {
                                     ),
                                     _sizedHeightBox0008(context),
                                     SizedBox(
-                                      height: MediaQuery.of(context).size.height *
-                                          0.05,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.05,
                                       child: TextFormField(
                                         decoration: const InputDecoration(
                                           border: OutlineInputBorder(),
@@ -711,8 +728,9 @@ class _RegisterPageState extends State<RegisterPage> {
                                     ),
                                     _sizedHeightBox005(context),
                                     SizedBox(
-                                      height: MediaQuery.of(context).size.height *
-                                          0.06,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.06,
                                       child: ElevatedButton(
                                         style: ButtonStyle(
                                           backgroundColor:
@@ -767,7 +785,8 @@ class _RegisterPageState extends State<RegisterPage> {
                               ],
                             ),
                             SizedBox(
-                              height: MediaQuery.of(context).size.height * 0.012,
+                              height:
+                                  MediaQuery.of(context).size.height * 0.012,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -789,7 +808,8 @@ class _RegisterPageState extends State<RegisterPage> {
                             Padding(
                               padding: EdgeInsets.symmetric(
                                   horizontal:
-                                      MediaQuery.of(context).size.height * 0.005),
+                                      MediaQuery.of(context).size.height *
+                                          0.005),
                               child: Column(
                                 children: [
                                   SizedBox(
